@@ -11,8 +11,8 @@ from typing import Mapping, Sequence
 import anthropic
 import openai
 from anthropic import AnthropicFoundry
-from mistralai import Mistral
-from mistralai.models import SDKError as MistralSDKError
+from mistralai.client import Mistral
+from mistralai.client.errors import SDKError as MistralSDKError
 from openai import AzureOpenAI, OpenAI
 from tenacity import retry, retry_if_exception_type, stop_after_attempt, wait_random_exponential
 

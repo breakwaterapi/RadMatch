@@ -10,9 +10,7 @@ requires-python = ">=3.11"
 dependencies = [
     "tqdm>=4.66.1,<5",
     "openai>=2.7.1",
-    # mistralai 2.x moved the client out of the package root, breaking
-    # `from mistralai import Mistral`. Keep the major pinned.
-    "mistralai>=1.9.11,<2",
+    "mistralai>=2",
     "anthropic>=0.69.0",
     "tenacity>=9.0.0",
     "python-dotenv>=1.0.1,<2",

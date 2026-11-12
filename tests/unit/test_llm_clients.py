@@ -9,7 +9,7 @@ from unittest.mock import MagicMock, patch
 import httpx
 import openai
 import pytest
-from mistralai.models import SDKError as MistralSDKError
+from mistralai.client.errors import SDKError as MistralSDKError
 
 from radmatch import constants
 from radmatch.llm_utils import llm_clients
